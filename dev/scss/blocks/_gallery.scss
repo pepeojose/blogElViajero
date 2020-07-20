@@ -1,0 +1,53 @@
+.gallery {
+    position: relative;
+    padding: 0 1.2rem 2.5rem;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    @include tablet {
+        padding: 10rem 1.2rem 6rem;
+    }
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &-h2 {
+        font-size: 3rem;
+        padding: 2rem 0;
+        @include laptop {
+            font-size: 4rem;
+        }
+    }
+    &-p {
+        margin-bottom: 3rem;
+        font-size: 1.2rem;
+    }
+    &-img {
+        margin-bottom: .5rem;
+        border: 3px solid hsl(240, 94%, 73%);
+        transition: .3s ease;
+        cursor: pointer;
+        &:hover {
+            border: 3px solid hsl(240, 2%, 25%);
+        }
+        @include tablet {
+            width: 31%;
+            margin: 0.3rem;
+        }
+    }
+}
+
+.wave {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wave4 {
+    width: 100%;
+    position: absolute;
+    top: 159px;
+    left: 0;
+}

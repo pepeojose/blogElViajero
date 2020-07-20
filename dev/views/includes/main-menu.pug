@@ -1,0 +1,5 @@
+nav.main-nav#maniNav
+    ul.main-menu#mainMenu
+        each page in pages
+            li.main-menu__item
+                a.main-menu__link(href=`/${page}`)= page.charAt(0).toUpperCase()+ page.slice(1)

@@ -1,0 +1,19 @@
+include ../config/config
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Blog El Viajero
+        link(rel="stylesheet", href="css/styles.css")
+    body
+        .main-container
+            header.header
+                .logo
+                    img.img-logo(src="./img/Logo-corto.png", alt="Logo")
+                block menu
+            main.main
+                block main
+            footer.footer
+                p.p-footer Copyright © 2020 El Viajero
+                a.policies(href="/") Políticas De Privacidad

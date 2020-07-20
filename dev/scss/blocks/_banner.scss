@@ -1,0 +1,49 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    @include tablet {
+        height: 320px;
+    }
+    @include laptop {
+        height: 47vh;
+    }
+}
+
+.img-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cont-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    @include tablet {
+        font-size: 4rem;
+    }
+    @include laptop {
+        margin-bottom: 3rem;
+    }
+}
+
+.p-banner {
+    font-size: 1.8rem;
+    @include laptop {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,14 @@
+.header {
+    background-color: #fff;
+    padding: 1rem .8rem;
+    @include laptop {
+        padding: 1rem 1.5rem;
+        display: flex;
+    }
+}
+
+.logo {
+    @include laptop {
+        margin-left: 0;
+    }
+}

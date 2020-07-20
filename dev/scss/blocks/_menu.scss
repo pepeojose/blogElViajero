@@ -1,0 +1,26 @@
+.main-nav {
+    display: none;
+    @include laptop {
+        display: block;
+        margin-right: 1rem;
+        margin-left: auto;
+    }
+}
+
+.main-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu__item {}
+
+.main-menu__link {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    color: #000;
+}
+
+.main-menu__link:hover {
+    color: blue;
+}

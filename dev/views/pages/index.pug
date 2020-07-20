@@ -1,0 +1,17 @@
+extends ../templates/template
+block menu
+    include ../includes/main-menu
+block main
+    include ../includes/banner
+    section.gallery#gallery
+        h2.gallery-h2 Galería
+        p.gallery-p Echale un vistazo al mundo
+        .gallery-content
+            img.gallery-img(src="./img/desert.jpg", alt="Desierto")
+            img.gallery-img(src="./img/japan.jpg", alt="")
+            img.gallery-img(src="./img/bench.jpg", alt="Banco de madera bajo un arbol")
+            img.gallery-img(src="./img/schilthorn.jpg", alt="")
+            img.gallery-img(src="./img/jungle.jpg", alt="Sendero de madera en el bosque")
+            img.gallery-img(src="./img/vancouver.jpg", alt="Barcas y rascacielos desd el puerto de Vancouver")
+        
+        
