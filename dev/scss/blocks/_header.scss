@@ -1,9 +1,12 @@
 .header {
     background-color: #fff;
     padding: 1rem .8rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include laptop {
         padding: 1rem 1.5rem;
-        display: flex;
     }
 }
 

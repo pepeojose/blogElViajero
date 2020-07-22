@@ -1,24 +1,55 @@
-.main-nav {
-    display: none;
+.icon-menu {
+    margin-right: 1rem;
     @include laptop {
-        display: block;
+        display: none;
+    }
+}
+
+.icon-menu-closed {
+    display: none;
+    &__img {
+        height: 20px;
+    }
+}
+
+.main-nav {
+    // display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    @include laptop {
+        position: static;
+        // display: block;
         margin-right: 1rem;
         margin-left: auto;
     }
 }
 
 .main-menu {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    @include laptop {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 }
 
-.main-menu__item {}
-
 .main-menu__link {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
     color: #000;
+    padding: .8rem;
+    display: block;
+    border-top: 1px solid #e7e5e5;
+    @include laptop {
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border: none;
+    }
 }
 
 .main-menu__link:hover {
