@@ -47,3 +47,26 @@
         font-size: 2.5rem;
     }
 }
+
+.title-banner-destinos {
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    @include tablet {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+    @include laptop {
+        margin-bottom: 3rem;
+        font-size: 4rem;
+    }
+}
+
+.p-banner-destinos {
+    font-size: 1.2rem;
+    @include tablet {
+        font-size: 1.3rem;
+    }
+    @include laptop {
+        letter-spacing: 2px;
+    }
+}

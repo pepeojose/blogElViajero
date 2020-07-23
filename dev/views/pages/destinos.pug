@@ -1,0 +1,45 @@
+extends ../templates/template
+block menu
+    - pageActive = 'destinos'
+    include ../includes/main-menu
+block main
+    section.banner
+        img.img-banner(src="./img/panorama.jpg", alt="")
+        .cont-title
+            h2.title-banner-destinos Destinos del Mundo
+            p.p-banner-destinos EN QUE PARTE DEL PLANETA TE GUSTARÍA PERDERTE
+    section.destinos
+        include ../includes/ondas
+        h2.destinos-h2 Destinos del Mundo
+        p.destinos-p Elige un lugar del planeta y realiza tus sueños
+        .destinos-content
+            .continente
+                a.continente-link(href="./europa.html")
+                    img.continente-img(src="./img/europe.png", alt="Mapa de Europa")
+                    h3.continente-title Europa
+                    p.continente-p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sed fuga quibusdam earum cum?
+            .continente
+                a.continente-link(href="")
+                    img.continente-img(src="./img/asia.png", alt="Mapa de Asia")
+                    h3.continente-title Asia
+                    p.continente-p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sed fuga quibusdam earum cum?
+            .continente
+                a.continente-link(href="")
+                    img.continente-img(src="./img/africa.png", alt="Mapa de Africa")
+                    h3.continente-title Africa
+                    p.continente-p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sed fuga quibusdam earum cum?
+            .continente
+                a.continente-link(href="")
+                    img.continente-img(src="./img/america.png", alt="Mapa de América")
+                    h3.continente-title América
+                    p.continente-p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sed fuga quibusdam earum cum?
+            .continente
+                a.continente-link(href="")
+                    img.continente-img(src="./img/australia.png", alt="Mapa de Oceanía")
+                    h3.continente-title Oceanía
+                    p.continente-p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sed fuga quibusdam earum cum?
+            .continente
+                a.continente-link(href="")
+                    img.continente-img(src="./img/antartida.png", alt="Mapa de Antártida")
+                    h3.continente-title Antártida
+                    p.continente-p Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum sed fuga quibusdam earum cum?

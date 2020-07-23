@@ -171,11 +171,21 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .p-banner { font-size: 2.5rem; } }
 
+.title-banner-destinos { margin-bottom: 1rem; font-size: 2.3rem; }
+
+@media screen and (min-width: 415px) { .title-banner-destinos { margin-bottom: 2rem; font-size: 3rem; } }
+
+@media screen and (min-width: 1024px) { .title-banner-destinos { margin-bottom: 3rem; font-size: 4rem; } }
+
+.p-banner-destinos { font-size: 1.2rem; }
+
+@media screen and (min-width: 415px) { .p-banner-destinos { font-size: 1.3rem; } }
+
+@media screen and (min-width: 1024px) { .p-banner-destinos { letter-spacing: 2px; } }
+
 .gallery { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #000; color: #fff; }
 
 @media screen and (min-width: 415px) { .gallery { padding: 10rem 0.5rem 6rem; } }
-
-.gallery-content { display: flex; flex-wrap: wrap; justify-content: center; }
 
 .gallery-h2 { position: relative; font-size: 3rem; padding: 2rem 0; }
 
@@ -185,6 +195,8 @@ template { display: none; }
 
 @media screen and (min-width: 415px) { .gallery-p { top: -60px; margin-bottom: -2rem; } }
 
+.gallery-content { display: flex; flex-wrap: wrap; justify-content: center; }
+
 .gallery-img { margin-bottom: .5rem; border: 3px solid #7979fb; transition: .3s ease; cursor: pointer; }
 
 .gallery-img:hover { border: 3px solid #3e3e41; }
@@ -192,6 +204,36 @@ template { display: none; }
 @media screen and (min-width: 415px) { .gallery-img { width: 31%; margin: 0.3rem; } }
 
 .wave { width: 100%; position: absolute; top: 0; left: 0; }
+
+.destinos { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #fff; color: #000; }
+
+@media screen and (min-width: 415px) { .destinos { padding: 10rem 0.5rem 6rem; } }
+
+.destinos-h2 { position: relative; font-size: 3rem; padding: 2rem 0; }
+
+@media screen and (min-width: 415px) { .destinos-h2 { top: -60px; padding: 0 0 1.5rem; font-size: 4rem; } }
+
+.destinos-p { position: relative; margin-bottom: 3rem; font-size: 1.2rem; }
+
+@media screen and (min-width: 415px) { .destinos-p { top: -60px; margin-bottom: -2rem; font-size: 1.6rem; } }
+
+.destinos-content { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 6rem; }
+
+.destinos .continente { margin-bottom: 1rem; cursor: pointer; }
+
+@media screen and (min-width: 415px) { .destinos .continente { margin: 2rem 0.5rem; width: 31%; } }
+
+.destinos .continente-link { display: block; height: 100%; }
+
+.destinos .continente-img { width: 80%; }
+
+@media screen and (min-width: 415px) { .destinos .continente-img { width: 90%; } }
+
+@media screen and (min-width: 1024px) { .destinos .continente-img { width: 75%; } }
+
+.destinos .continente-title { font-size: 1.8rem; margin: 1rem 0; color: #000; }
+
+.destinos .continente-p { font-size: 1.2rem; padding: 1rem 3rem; color: #ccc; }
 
 .footer { background-color: #201e1e; color: #fff; padding: 2.5rem 0; text-align: center; border-top: 1px solid #9b9999; }
 

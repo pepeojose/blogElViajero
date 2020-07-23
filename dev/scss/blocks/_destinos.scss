@@ -1,9 +1,9 @@
-.gallery {
+.destinos {
     position: relative;
     padding: 0 1.2rem 2.5rem;
     text-align: center;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     @include tablet {
         padding: 10rem 0.5rem 6rem;
     }
@@ -24,31 +24,44 @@
         @include tablet {
             top: -60px;
             margin-bottom: -2rem;
+            font-size: 1.6rem;
         }
     }
     &-content {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 6rem;
     }
-    &-img {
-        margin-bottom: .5rem;
-        border: 3px solid hsl(240, 94%, 73%);
-        transition: .3s ease;
+    .continente {
+        margin-bottom: 1rem;
         cursor: pointer;
-        &:hover {
-            border: 3px solid hsl(240, 2%, 25%);
-        }
         @include tablet {
+            margin: 2rem 0.5rem;
             width: 31%;
-            margin: 0.3rem;
+        }
+        &-link {
+            display: block;
+            height: 100%;
+        }
+        &-img {
+            width: 80%;
+            @include tablet {
+                width: 90%;
+            }
+            @include laptop {
+                width: 75%;
+            }
+        }
+        &-title {
+            font-size: 1.8rem;
+            margin: 1rem 0;
+            color: #000;
+        }
+        &-p {
+            font-size: 1.2rem;
+            padding: 1rem 3rem;
+            color: #ccc;
         }
     }
-}
-
-.wave {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
