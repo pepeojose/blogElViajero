@@ -43,22 +43,23 @@
         justify-content: flex-end;
         align-items: center;
     }
-}
-
-.main-menu__link {
-    color: #000;
-    padding: .8rem;
-    display: block;
-    border-top: 1px solid #e7e5e5;
-    @include laptop {
-        font-size: 1.2rem;
-        padding: 0.5rem 1rem;
-        border: none;
+    &__link {
+        color: #000;
+        padding: .8rem;
+        display: block;
+        border-top: 1px solid #e7e5e5;
+        @include laptop {
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
+            border: none;
+        }
+        &:hover {
+            color: blue;
+        }
+        &--active {
+            color: blue;
+        }
     }
-}
-
-.main-menu__link:hover {
-    color: blue;
 }
 
 .showMenu {

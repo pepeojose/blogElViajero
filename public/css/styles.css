@@ -143,6 +143,8 @@ template { display: none; }
 
 .main-menu__link:hover { color: blue; }
 
+.main-menu__link--active { color: blue; }
+
 .showMenu { transform: translateY(0); }
 
 .block { display: block; }
