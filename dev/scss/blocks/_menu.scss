@@ -1,5 +1,6 @@
 .icon-menu {
     margin-right: 1rem;
+    cursor: pointer;
     @include laptop {
         display: none;
     }
@@ -7,20 +8,21 @@
 
 .icon-menu-closed {
     display: none;
+    margin-right: 1.4rem;
+    cursor: pointer;
     &__img {
         height: 20px;
     }
 }
 
 .main-nav {
-    // display: none;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 100px;
-    background-color: red;
+    height: 150%;
+    overflow: hidden;
     @include laptop {
         position: static;
         // display: block;
@@ -32,7 +34,10 @@
 .main-menu {
     background-color: #fff;
     width: 100%;
+    transform: translateY(-100%);
+    transition: transform .5s ease;
     @include laptop {
+        transform: translateY(0);
         height: 100%;
         display: flex;
         justify-content: flex-end;
@@ -54,4 +59,16 @@
 
 .main-menu__link:hover {
     color: blue;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
 }

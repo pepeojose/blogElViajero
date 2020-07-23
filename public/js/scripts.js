@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var btnMenu=document.querySelector(".icon-menu"),menu=document.getElementById("mainMenu"),btnClosed=document.querySelector(".icon-menu-closed");btnMenu.addEventListener("click",function(){menu.classList.toggle("showMenu"),changeBtn()});var changeBtn=function(){btnMenu.classList.toggle("none"),btnClosed.classList.toggle("block")};btnClosed.addEventListener("click",function(){menu.classList.toggle("showMenu"),changeBtn()});

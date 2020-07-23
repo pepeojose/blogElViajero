@@ -121,27 +121,33 @@ template { display: none; }
 
 @media screen and (min-width: 1024px) { .logo { margin-left: 0; } }
 
-.icon-menu { margin-right: 1rem; }
+.icon-menu { margin-right: 1rem; cursor: pointer; }
 
 @media screen and (min-width: 1024px) { .icon-menu { display: none; } }
 
-.icon-menu-closed { display: none; }
+.icon-menu-closed { display: none; margin-right: 1.4rem; cursor: pointer; }
 
 .icon-menu-closed__img { height: 20px; }
 
-.main-nav { position: absolute; top: 100%; left: 0; z-index: 10; width: 100%; height: 100px; background-color: red; }
+.main-nav { position: absolute; top: 100%; left: 0; z-index: 10; width: 100%; height: 150%; overflow: hidden; }
 
 @media screen and (min-width: 1024px) { .main-nav { position: static; margin-right: 1rem; margin-left: auto; } }
 
-.main-menu { background-color: #fff; width: 100%; }
+.main-menu { background-color: #fff; width: 100%; transform: translateY(-100%); transition: transform .5s ease; }
 
-@media screen and (min-width: 1024px) { .main-menu { height: 100%; display: flex; justify-content: flex-end; align-items: center; } }
+@media screen and (min-width: 1024px) { .main-menu { transform: translateY(0); height: 100%; display: flex; justify-content: flex-end; align-items: center; } }
 
 .main-menu__link { color: #000; padding: .8rem; display: block; border-top: 1px solid #e7e5e5; }
 
 @media screen and (min-width: 1024px) { .main-menu__link { font-size: 1.2rem; padding: 0.5rem 1rem; border: none; } }
 
 .main-menu__link:hover { color: blue; }
+
+.showMenu { transform: translateY(0); }
+
+.block { display: block; }
+
+.none { display: none; }
 
 .banner { position: relative; width: 100%; height: 220px; }
 
