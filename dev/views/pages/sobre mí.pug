@@ -1,0 +1,15 @@
+extends ../templates/template
+block menu
+    - pageActive = 'sobre mí'
+    include ../includes/main-menu
+block main
+    section.about-me
+        include ../includes/ondas-blancas
+        .about-me-contain
+            .about-me-contain-img
+                img.about-me-contain-img-image(src="./img/caminante.jpg", alt="Hombre caminando por carretera con maleta")
+            .about-me-contain-text
+                h2.about-me-contain-text-h2 Sobre El Viajero
+                p.about-me-contain-text-p El Viajero es un blog para las personas, para las que viajar es una necesidad tanto como el comer.
+
+

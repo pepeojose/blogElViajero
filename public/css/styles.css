@@ -115,7 +115,7 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-.header { background-color: #fff; padding: 1rem .8rem; position: relative; display: flex; justify-content: space-between; align-items: center; }
+.header { background-color: #fff; padding: 1rem .8rem; position: relative; display: flex; justify-content: space-between; align-items: center; border-bottom: .2px solid #e6e2e2; }
 
 @media screen and (min-width: 1024px) { .header { padding: 1rem 1.5rem; } }
 
@@ -234,6 +234,38 @@ template { display: none; }
 .destinos .continente-title { font-size: 1.8rem; margin: 1rem 0; color: #000; }
 
 .destinos .continente-p { font-size: 1.2rem; padding: 1rem 3rem; color: #ccc; }
+
+.about-me { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #000; }
+
+@media screen and (min-width: 415px) { .about-me { padding: 10rem 0.5rem 6rem; } }
+
+.about-me-contain { padding-top: 10rem; }
+
+@media screen and (min-width: 415px) { .about-me-contain { display: flex; padding: 1rem; } }
+
+@media screen and (min-width: 1024px) { .about-me-contain { display: flex; justify-content: space-between; margin-top: 4rem; } }
+
+.about-me-contain-img { width: 97%; margin-left: auto; margin-right: auto; }
+
+@media screen and (min-width: 415px) { .about-me-contain-img { margin-right: 2rem; } }
+
+@media screen and (min-width: 1024px) { .about-me-contain-img { width: 60%; } }
+
+.about-me-contain-img-image { width: 100%; }
+
+@media screen and (min-width: 1024px) { .about-me-contain-img-image { width: 80%; display: block; margin-left: 6rem; } }
+
+.about-me-contain-text { width: 97%; margin-left: auto; margin-right: auto; }
+
+@media screen and (min-width: 415px) { .about-me-contain-text { text-align: left; } }
+
+@media screen and (min-width: 1024px) { .about-me-contain-text { width: 40%; margin-right: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; } }
+
+.about-me-contain-text-h2 { color: #fff; font-size: 2.7rem; padding: 2rem 0; }
+
+@media screen and (min-width: 1024px) { .about-me-contain-text-h2 { font-size: 3rem; padding-bottom: 2rem; } }
+
+.about-me-contain-text-p { font-size: 1.2rem; text-align: left; color: #a1a1a1; padding-bottom: 2.5rem; }
 
 .footer { background-color: #201e1e; color: #fff; padding: 2.5rem 0; text-align: center; border-top: 1px solid #9b9999; }
 

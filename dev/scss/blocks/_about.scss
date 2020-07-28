@@ -1,0 +1,71 @@
+.about-me {
+    position: relative;
+    padding: 0 1.2rem 2.5rem;
+    text-align: center;
+    background-color: #000;
+    @include tablet {
+        padding: 10rem 0.5rem 6rem;
+    }
+    &-contain {
+        padding-top: 10rem;
+        @include tablet {
+            display: flex;
+            padding: 1rem;
+        }
+        @include laptop {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+        }
+        &-img {
+            width: 97%;
+            margin-left: auto;
+            margin-right: auto;
+            @include tablet {
+                margin-right: 2rem;
+            }
+            @include laptop {
+                width: 60%;
+            }
+            &-image {
+                width: 100%;
+                @include laptop {
+                    width: 80%;
+                    display: block;
+                    margin-left: 6rem;
+                }
+            }
+        }
+        &-text {
+            width: 97%;
+            margin-left: auto;
+            margin-right: auto;
+            @include tablet {
+                text-align: left;
+            }
+            @include laptop {
+                width: 40%;
+                margin-right: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            &-h2 {
+                color: #fff;
+                font-size: 2.7rem;
+                padding: 2rem 0;
+                @include laptop {
+                    font-size: 3rem;
+                    padding-bottom: 2rem;
+                }
+            }
+            &-p {
+                font-size: 1.2rem;
+                text-align: left;
+                color: #a1a1a1;
+                padding-bottom: 2.5rem;
+            }
+        }
+    }
+}
