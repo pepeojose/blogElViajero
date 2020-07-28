@@ -1,0 +1,55 @@
+.contact {
+    position: relative;
+    padding: 0 1.2rem 2.5rem;
+    text-align: center;
+    background-color: #000;
+    &-text {
+        padding-top: 5rem;
+        color: #fff;
+        &-h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            padding-bottom: 3rem;
+            @include laptop {
+                padding: 4rem 0;
+            }
+        }
+        &-p {
+            font-size: 2.7rem;
+            font-weight: bold;
+            padding-bottom: 3rem;
+            @include laptop {
+                font-size: 4rem;
+            }
+        }
+        &-email {
+            font-size: 1.3rem;
+            color: #01a301;
+        }
+    }
+    &-social {
+        color: #ccc;
+        @include laptop {
+            margin-bottom: 3rem;
+        }
+        &-span {
+            display: inline-block;
+            margin: 2rem .5rem;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            background-color: #353333;
+            cursor: pointer;
+            transition: transform .3s ease;
+            &:hover {
+                transform: scale(1.2);
+                background-color: #000;
+                color: #01a301;
+            }
+            @include tablet {
+                margin: 3rem .8rem;
+            }
+        }
+    }
+}

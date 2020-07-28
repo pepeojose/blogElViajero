@@ -1,0 +1,20 @@
+extends ../templates/template
+block menu
+    - pageActive = 'contacto'
+    include ../includes/main-menu
+block main
+    section.contact
+        include ../includes/ondas-blancas
+        .contact-text
+            h2.contact-text-h2 contacto
+            p.contact-text-p Para cualquier consulta mándame un correo
+            p.contact-text-email Contact@company.com
+        .contact-social
+            span.contact-social-span 
+                <i class="fab fa-facebook-f"></i>
+            span.contact-social-span
+                <i class="fab fa-twitter"></i>
+            span.contact-social-span
+                <i class="fab fa-instagram"></i>
+            span.contact-social-span
+                <i class="fab fa-youtube"></i>

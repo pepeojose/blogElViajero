@@ -1,3 +1,5 @@
+body { font-family: sans-serif; }
+
 ul { list-style: none; }
 
 a { text-decoration: none; }
@@ -235,37 +237,61 @@ template { display: none; }
 
 .destinos .continente-p { font-size: 1.2rem; padding: 1rem 3rem; color: #ccc; }
 
-.about-me { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #000; }
+.about { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #000; }
 
-@media screen and (min-width: 415px) { .about-me { padding: 10rem 0.5rem 6rem; } }
+@media screen and (min-width: 415px) { .about { padding: 10rem 0.5rem 6rem; } }
 
-.about-me-contain { padding-top: 10rem; }
+.about-contain { padding-top: 10rem; }
 
-@media screen and (min-width: 415px) { .about-me-contain { display: flex; padding: 1rem; } }
+@media screen and (min-width: 415px) { .about-contain { display: flex; padding: 1rem; } }
 
-@media screen and (min-width: 1024px) { .about-me-contain { display: flex; justify-content: space-between; margin-top: 4rem; } }
+@media screen and (min-width: 1024px) { .about-contain { display: flex; justify-content: space-between; margin-top: 4rem; } }
 
-.about-me-contain-img { width: 97%; margin-left: auto; margin-right: auto; }
+.about-contain-img { width: 97%; margin-left: auto; margin-right: auto; }
 
-@media screen and (min-width: 415px) { .about-me-contain-img { margin-right: 2rem; } }
+@media screen and (min-width: 415px) { .about-contain-img { margin-right: 2rem; } }
 
-@media screen and (min-width: 1024px) { .about-me-contain-img { width: 60%; } }
+@media screen and (min-width: 1024px) { .about-contain-img { width: 60%; } }
 
-.about-me-contain-img-image { width: 100%; }
+.about-contain-img-image { width: 100%; }
 
-@media screen and (min-width: 1024px) { .about-me-contain-img-image { width: 80%; display: block; margin-left: 6rem; } }
+@media screen and (min-width: 1024px) { .about-contain-img-image { width: 80%; display: block; margin-left: 6rem; } }
 
-.about-me-contain-text { width: 97%; margin-left: auto; margin-right: auto; }
+.about-contain-text { width: 97%; margin-left: auto; margin-right: auto; }
 
-@media screen and (min-width: 415px) { .about-me-contain-text { text-align: left; } }
+@media screen and (min-width: 415px) { .about-contain-text { text-align: left; } }
 
-@media screen and (min-width: 1024px) { .about-me-contain-text { width: 40%; margin-right: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; } }
+@media screen and (min-width: 1024px) { .about-contain-text { width: 40%; margin-right: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; } }
 
-.about-me-contain-text-h2 { color: #fff; font-size: 2.7rem; padding: 2rem 0; }
+.about-contain-text-h2 { color: #fff; font-size: 2.7rem; padding: 2rem 0; }
 
-@media screen and (min-width: 1024px) { .about-me-contain-text-h2 { font-size: 3rem; padding-bottom: 2rem; } }
+@media screen and (min-width: 1024px) { .about-contain-text-h2 { font-size: 3rem; padding-bottom: 2rem; } }
 
-.about-me-contain-text-p { font-size: 1.2rem; text-align: left; color: #a1a1a1; padding-bottom: 2.5rem; }
+.about-contain-text-p { font-size: 1.2rem; text-align: left; color: #a1a1a1; padding-bottom: 2.5rem; }
+
+.contact { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #000; }
+
+.contact-text { padding-top: 5rem; color: #fff; }
+
+.contact-text-h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 10px; padding-bottom: 3rem; }
+
+@media screen and (min-width: 1024px) { .contact-text-h2 { padding: 4rem 0; } }
+
+.contact-text-p { font-size: 2.7rem; font-weight: bold; padding-bottom: 3rem; }
+
+@media screen and (min-width: 1024px) { .contact-text-p { font-size: 4rem; } }
+
+.contact-text-email { font-size: 1.3rem; color: #01a301; }
+
+.contact-social { color: #ccc; }
+
+@media screen and (min-width: 1024px) { .contact-social { margin-bottom: 3rem; } }
+
+.contact-social-span { display: inline-block; margin: 2rem .5rem; width: 45px; height: 45px; line-height: 45px; background-color: #353333; cursor: pointer; transition: transform .3s ease; }
+
+.contact-social-span:hover { transform: scale(1.2); background-color: #000; color: #01a301; }
+
+@media screen and (min-width: 415px) { .contact-social-span { margin: 3rem .8rem; } }
 
 .footer { background-color: #201e1e; color: #fff; padding: 2.5rem 0; text-align: center; border-top: 1px solid #9b9999; }
 
