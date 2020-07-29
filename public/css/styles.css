@@ -207,6 +207,26 @@ template { display: none; }
 
 .wave { width: 100%; position: absolute; top: 0; left: 0; }
 
+.image-light { position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); top: 0; left: 0; display: flex; justify-content: center; align-items: center; transform: translate(100%); transition: transform .2s ease-in-out; }
+
+.show { transform: translate(0); }
+
+.expand-image { -o-object-fit: cover; object-fit: cover; width: 60%; border-radius: 10px; transform: scale(0); transition: transform .3s .2s; }
+
+@media screen and (min-width: 415px) { .expand-image { width: 80%; } }
+
+@media screen and (max-width: 360px) { .expand-image { width: 95%; } }
+
+.showImage { transform: scale(1); }
+
+.controls { position: absolute; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.6); cursor: pointer; }
+
+.controls-span { font-size: 1.5rem; display: inline-block; padding: 1rem 3rem; }
+
+.expandImage { transform: scale(1.2); }
+
+.collapseImage { transform: scale(1); }
+
 .destinos { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #fff; color: #000; }
 
 @media screen and (min-width: 415px) { .destinos { padding: 10rem 0.5rem 6rem; } }
@@ -236,6 +256,22 @@ template { display: none; }
 .destinos .continente-title { font-size: 1.8rem; margin: 1rem 0; color: #000; }
 
 .destinos .continente-p { font-size: 1.2rem; padding: 1rem 3rem; color: #ccc; }
+
+.continent { background-color: #000; color: #fff; text-align: center; padding: 1rem; }
+
+.continent-img { font-size: 3rem; padding-top: 4rem; background-color: #000; text-align: center; color: #fff; }
+
+@media screen and (min-width: 1024px) { .continent-img { padding-top: 5rem; } }
+
+.continent-p { text-transform: uppercase; color: #908a8a; margin-top: 2rem; }
+
+.continent-h2 { font-size: 2rem; margin-top: 2rem; }
+
+@media screen and (min-width: 415px) { .continent-h2 { font-size: 2.5rem; } }
+
+.continent-text { margin-top: 2rem; margin-bottom: 4rem; color: #908a8a; line-height: 2rem; }
+
+@media screen and (min-width: 1024px) { .continent-text { width: 70%; margin-left: auto; margin-right: auto; margin-bottom: 5.5rem; } }
 
 .about { position: relative; padding: 0 1.2rem 2.5rem; text-align: center; background-color: #000; }
 

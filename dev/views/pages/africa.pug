@@ -1,0 +1,9 @@
+extends ../templates/template
+block menu
+    include ../includes/main-menu
+block main
+    - continent = 'Africa'
+    p.continent-img 
+            <i class="fas fa-globe-africa"></i>
+    include ../includes/continent
+        

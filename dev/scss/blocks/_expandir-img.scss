@@ -1,0 +1,56 @@
+.image-light {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show {
+    transform: translate(0);
+}
+
+.expand-image {
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+    @include tablet {
+        width: 80%;
+    }
+    @include mobile {
+        width: 95%;
+    }
+}
+
+.showImage {
+    transform: scale(1);
+}
+
+.controls {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    cursor: pointer;
+    &-span {
+        font-size: 1.5rem;
+        display: inline-block;
+        padding: 1rem 3rem;
+    }
+}
+
+.expandImage {
+    transform: scale(1.2);
+}
+
+.collapseImage {
+    transform: scale(1);
+}

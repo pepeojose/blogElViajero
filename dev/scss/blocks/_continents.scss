@@ -1,0 +1,40 @@
+.continent {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    &-img {
+        font-size: 3rem;
+        padding-top: 4rem;
+        background-color: #000;
+        text-align: center;
+        color: #fff;
+        @include laptop {
+            padding-top: 5rem;
+        }
+    }
+    &-p {
+        text-transform: uppercase;
+        color: #908a8a;
+        margin-top: 2rem;
+    }
+    &-h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        @include tablet {
+            font-size: 2.5rem;
+        }
+    }
+    &-text {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        color: #908a8a;
+        line-height: 2rem;
+        @include laptop {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5.5rem;
+        }
+    }
+}
