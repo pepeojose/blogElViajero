@@ -1,0 +1,47 @@
+extends ../templates/template
+block menu
+    - pageActive = 'blog'
+    include ../includes/main-menu
+block main
+    section.section-post#sectionPost
+        .content-post
+            .post#post
+                - imageInput = './img/colosseum2.jpg'
+                - title = 'Roma'
+                - user = 'Admin'
+                - date = 'Junio 11, 2020'
+                - comment = 0
+                - category = 'Sin categoria'
+                include ../includes/post
+            .post#post
+                - imageInput = './img/vegas2.jpg'
+                - title = 'Las Vegas'
+                - user = 'Admin'
+                - date = 'Junio 9. 2020'
+                - comment = 0
+                - category = 'Sin categoria'
+                include ../includes/post
+            .post#post
+                - imageInput = './img/fuji.jpg'
+                - title = 'Japón una cultura milenaria'
+                - user = 'Admin'
+                - date = 'Junio 9. 2020'
+                - comment = 0
+                - category = 'Sin categoria'
+                include ../includes/post
+            .post#post
+                - imageInput = './img/desert2.jpg'
+                - title = 'Viaje al Sahara'
+                - user = 'Admin'
+                - date = 'Junio 9. 2020'
+                - comment = 0
+                - category = 'Sin categoria'
+                include ../includes/post
+            .post#post
+                - imageInput = './img/templo.jpg'
+                - title = 'Aventura en los Alpes'
+                - user = 'Admin'
+                - date = 'Junio 9. 2020'
+                - comment = 0
+                - category = 'Sin categoria'
+                include ../includes/post

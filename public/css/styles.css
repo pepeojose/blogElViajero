@@ -329,6 +329,30 @@ template { display: none; }
 
 @media screen and (min-width: 415px) { .contact-social-span { margin: 3rem .8rem; } }
 
+.content-post { padding: 0.6rem; display: grid; }
+
+@media screen and (min-width: 415px) { .content-post { grid-template-columns: repeat(2, 1fr); grid-gap: 1.2rem; } }
+
+@media screen and (min-width: 1024px) { .content-post { padding: .6rem 3rem 1rem; grid-template-columns: repeat(3, 1fr); } }
+
+.post { background: #f0eeee; margin-bottom: 3rem; }
+
+.post-image { width: 100%; display: block; margin: 0 auto 2rem; transition: -webkit-filter .3s ease; transition: filter .3s ease; transition: filter .3s ease, -webkit-filter .3s ease; }
+
+.post-image:hover { -webkit-filter: blur(0.2rem); filter: blur(0.2rem); }
+
+.post-title { padding-left: 0.5rem; font-size: 1.5rem; margin-bottom: 1.5rem; }
+
+.post-title-link { color: #524f4f; }
+
+.post-title-link:hover { color: #9b9494; }
+
+.post-symbol { display: inline-block; margin-left: 0.5rem; color: #5f9ea0; }
+
+.post-data { display: inline-block; margin-right: 1rem; padding-left: 0.5rem; color: #54595f; }
+
+.post-text { padding-left: 0.5rem; font-size: 1.2rem; margin-top: 1rem; margin-bottom: 2rem; line-height: 2rem; color: #54595f; }
+
 .footer { background-color: #201e1e; color: #fff; padding: 2.5rem 0; text-align: center; border-top: 1px solid #9b9999; }
 
 .p-footer { padding-bottom: 1.5rem; }

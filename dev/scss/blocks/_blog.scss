@@ -1,0 +1,56 @@
+.content-post {
+    padding: 0.6rem;
+    display: grid;
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.2rem;
+    }
+    @include laptop {
+        padding: .6rem 3rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.post {
+    background: #f0eeee;
+    margin-bottom: 3rem;
+    &-image {
+        width: 100%;
+        display: block;
+        margin: 0 auto 2rem;
+        transition: filter .3s ease;
+        &:hover {
+            filter: blur(.2rem);
+        }
+    }
+    &-title {
+        padding-left: 0.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        &-link {
+            color: #524f4f;
+            &:hover {
+                color: #9b9494;
+            }
+        }
+    }
+    &-symbol {
+        display: inline-block;
+        margin-left: 0.5rem;
+        color: #5f9ea0;
+    }
+    &-data {
+        display: inline-block;
+        margin-right: 1rem;
+        padding-left: 0.5rem;
+        color: #54595f;
+    }
+    &-text {
+        padding-left: 0.5rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        line-height: 2rem;
+        color: #54595f;
+    }
+}
