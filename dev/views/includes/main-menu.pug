@@ -9,12 +9,12 @@ nav#mainNav.main-nav
             if page == pageActive
                 li.main-menu__item
                     if index==0
-                        a(href="./").main-menu__link.main-menu__link--active= page.charAt(0).toUpperCase()+ page.slice(1)
+                        a(href="./index.html").main-menu__link.main-menu__link--active= page.charAt(0).toUpperCase()+ page.slice(1)
                     else
                         a(href=`./${page}.html`).main-menu__link.main-menu__link--active= page.charAt(0).toUpperCase()+ page.slice(1)
             else
                 li.main-menu__item
                     if index==0
-                        a(href="./").main-menu__link= page.charAt(0).toUpperCase()+ page.slice(1)
+                        a(href="./index.html").main-menu__link= page.charAt(0).toUpperCase()+ page.slice(1)
                     else
                         a(href=`./${page}.html`).main-menu__link= page.charAt(0).toUpperCase()+ page.slice(1)
