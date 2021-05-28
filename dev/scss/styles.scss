@@ -1,8 +1,8 @@
-// Estilos base
-@import 'base/base';
-@import 'base/normalize';
 // Mixins
 @import 'mixins/breakpoints';
+// Estilos base
+@import 'base/normalize';
+@import 'base/base';
 // Bloques
 @import 'blocks/header';
 @import 'blocks/menu';
