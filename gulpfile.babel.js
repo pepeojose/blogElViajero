@@ -28,7 +28,7 @@ gulp.task('styles', () => {
         }))
         .pipe(autoprefixer())
 
-    .pipe(gulp.dest('./public/css'))
+        .pipe(gulp.dest('./public/css'))
         .pipe(server.stream())
 })
 
