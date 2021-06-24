@@ -15,7 +15,7 @@ const server = browserSync.create()
 gulp.task('pug', () => {
     return gulp.src('./dev/views/pages/*.pug')
         .pipe(pug({
-            pretty: true
+            pretty: false
         }))
         .pipe(gulp.dest('./public/'))
 })
@@ -24,7 +24,7 @@ gulp.task('styles', () => {
     return gulp.src('./dev/scss/styles.scss')
         .pipe(plumber())
         .pipe(sass({
-            outputStyle: "compact"
+            outputStyle: "compressed"
         }))
         .pipe(autoprefixer())
 
