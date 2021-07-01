@@ -3,6 +3,13 @@
     padding: 0 1.2rem 2.5rem;
     text-align: center;
     background-color: #000;
+    @include tablet {
+        min-height: 77vh;
+        padding-top: 10rem;
+    }
+    @include laptop {
+        padding-top: 6rem;
+    }
     &-text {
         padding-top: 5rem;
         color: #fff;

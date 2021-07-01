@@ -9,8 +9,7 @@
     &-contain {
         padding-top: 10rem;
         @include tablet {
-            display: flex;
-            padding: 1rem;
+            padding-top: 3rem;
         }
         @include laptop {
             display: flex;
@@ -21,11 +20,9 @@
             width: 97%;
             margin-left: auto;
             margin-right: auto;
-            @include tablet {
-                margin-right: 2rem;
-            }
             @include laptop {
                 width: 60%;
+                margin-right: 2rem;
             }
             &-image {
                 width: 100%;
